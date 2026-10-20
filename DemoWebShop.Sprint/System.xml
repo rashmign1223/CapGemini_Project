@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="System Suite">
+
+    <test name="System Tests">
+
+        <parameter name="browser" value="chrome"/>
+
+        <groups>
+            <run>
+                <include name="System"/>
+            </run>
+        </groups>
+
+    <classes>
+      <class name="DemoWebShopCheckoutScript.CheckoutScripts"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

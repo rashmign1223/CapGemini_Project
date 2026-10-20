@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="tests" thread-count="2">
+
+<test name="Chrome Tests">
+        <parameter name="browser" value="chrome"/>
+
+    <classes>
+      <class name="DemoWebShopPositiveScripts.RegisterScriptTest"/>
+      <class name="DemoWebShopCartScripts.CartPositiveScripts"/>
+      <class name="DemoWebShopPositiveScripts.LoginPositiveTest"/>
+      <class name="DemoWebShopCheckoutScript.CheckoutScripts"/>
+      <class name="DemoWebShopProductScripts.ProdcuctPositiveScripts"/>
+      <class name="DemoWebShopWishlist.WishlistPositiveScript"/>
+    </classes>
+  </test> <!-- Test -->
+
+  <!-- Firefox Tests -->
+    <test name="Firefox Tests">
+        <parameter name="browser" value="firefox"/>
+         <classes>
+      <class name="DemoWebShopPositiveScripts.RegisterScriptTest"/>
+      <class name="DemoWebShopCartScripts.CartPositiveScripts"/>
+      <class name="DemoWebShopPositiveScripts.LoginPositiveTest"/>
+      <class name="DemoWebShopCheckoutScript.CheckoutScripts"/>
+      <class name="DemoWebShopProductScripts.ProdcuctPositiveScripts"/>
+      <class name="DemoWebShopWishlist.WishlistPositiveScript"/>
+    </classes>
+    </test>
+
+</suite> <!-- Suite -->

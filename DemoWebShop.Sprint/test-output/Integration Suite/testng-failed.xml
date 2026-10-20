@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Integration Suite]">
+  <test thread-count="5" name="Integration Tests(failed)">
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="Integration"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="DemoWebShopWishlist.WishlistNegativeScripts">
+        <methods>
+          <include name="Wish_Neg_03_AddToCartWithoutSelection"/>
+          <include name="BM"/>
+          <include name="AM"/>
+        </methods>
+      </class> <!-- DemoWebShopWishlist.WishlistNegativeScripts -->
+    </classes>
+  </test> <!-- Integration Tests(failed) -->
+</suite> <!-- Failed suite [Integration Suite] -->

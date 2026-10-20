@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="functional Suite">
+
+    <test name="functional Tests">
+
+        <parameter name="browser" value="chrome"/>
+
+        <groups>
+            <run>
+                <include name="functional"/>
+            </run>
+        </groups>
+    <classes>
+      <class name="DemoWebShopPositiveScripts.RegisterScriptTest"/>
+      <class name="DemoWebShopCartScripts.CartPositiveScripts"/>
+      <class name="DemoWebShopCartScripts.CartNegativeScripts"/>
+      <class name="DemoWebShopPositiveScripts.LoginPositiveTest"/>
+      <class name="DemoWebShopPositiveScripts.RegisterNegativeScriptTest"/>
+      <class name="DemoWebShopWishlist.WishlistNegativeScripts"/>
+      <class name="DemoWebShopProductScripts.ProdcuctPositiveScripts"/>
+      <class name="DemoWebShopProductScripts.ProductNegativeScripts"/>
+      <class name="DemoWebShopWishlist.WishlistPositiveScript"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

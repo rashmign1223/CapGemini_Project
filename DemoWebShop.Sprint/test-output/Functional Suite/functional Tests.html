@@ -1,0 +1,161 @@
+<html>
+<head>
+<title>TestNG:  functional Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>functional Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>16/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Oct 19 14:26:41 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>335 seconds (335717 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>functional </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='DemoWebShopProductScripts.ProdcuctPositiveScripts.verifyJewelryProductDetails()'><b>verifyJewelryProductDetails</b><br>Test class: DemoWebShopProductScripts.ProdcuctPositiveScripts</td>
+<td></td>
+<td>3</td>
+<td>DemoWebShopProductScripts.ProdcuctPositiveScripts@2e377400</td></tr>
+<tr>
+<td title='DemoWebShopProductScripts.ProdcuctPositiveScripts.searchValidJewelry()'><b>searchValidJewelry</b><br>Test class: DemoWebShopProductScripts.ProdcuctPositiveScripts</td>
+<td></td>
+<td>3</td>
+<td>DemoWebShopProductScripts.ProdcuctPositiveScripts@2e377400</td></tr>
+<tr>
+<td title='DemoWebShopPositiveScripts.RegisterScriptTest.registrationTest()'><b>registrationTest</b><br>Test class: DemoWebShopPositiveScripts.RegisterScriptTest<br>Parameters: TC-REG-01, female, Anush, Rao, Anush12@gmail.com, Anu@123, Anu@123, Register Completed</td>
+<td></td>
+<td>8</td>
+<td>DemoWebShopPositiveScripts.RegisterScriptTest@1ce24091</td></tr>
+<tr>
+<td title='DemoWebShopProductScripts.ProductNegativeScripts.searchInvalidProduct()'><b>searchInvalidProduct</b><br>Test class: DemoWebShopProductScripts.ProductNegativeScripts</td>
+<td></td>
+<td>2</td>
+<td>DemoWebShopProductScripts.ProductNegativeScripts@1757cd72</td></tr>
+<tr>
+<td title='DemoWebShopPositiveScripts.LoginPositiveTest.loginWithRegisteredCredentials()'><b>loginWithRegisteredCredentials</b><br>Test class: DemoWebShopPositiveScripts.LoginPositiveTest</td>
+<td></td>
+<td>2</td>
+<td>DemoWebShopPositiveScripts.LoginPositiveTest@192c3f1e</td></tr>
+<tr>
+<td title='DemoWebShopPositiveScripts.RegisterScriptTest.registrationTest()'><b>registrationTest</b><br>Test class: DemoWebShopPositiveScripts.RegisterScriptTest<br>Parameters: TC-REG-05, female, Chandu, Yadav, chandu89@gmail.com, chandu@890, chandu@890, Register Completed</td>
+<td></td>
+<td>4</td>
+<td>DemoWebShopPositiveScripts.RegisterScriptTest@1ce24091</td></tr>
+<tr>
+<td title='DemoWebShopWishlist.WishlistPositiveScript.Wish_Pos_02_VerifyWishlistPage()'><b>Wish_Pos_02_VerifyWishlistPage</b><br>Test class: DemoWebShopWishlist.WishlistPositiveScript</td>
+<td></td>
+<td>6</td>
+<td>DemoWebShopWishlist.WishlistPositiveScript@445b295b</td></tr>
+<tr>
+<td title='DemoWebShopCartScripts.CartNegativeScripts.CART_NEG_03_CheckoutWithoutAcceptingTerms()'><b>CART_NEG_03_CheckoutWithoutAcceptingTerms</b><br>Test class: DemoWebShopCartScripts.CartNegativeScripts</td>
+<td></td>
+<td>8</td>
+<td>DemoWebShopCartScripts.CartNegativeScripts@1e178745</td></tr>
+<tr>
+<td title='DemoWebShopWishlist.WishlistNegativeScripts.Wish_Neg_01_ProductNotInWishlist()'><b>Wish_Neg_01_ProductNotInWishlist</b><br>Test class: DemoWebShopWishlist.WishlistNegativeScripts</td>
+<td></td>
+<td>12</td>
+<td>DemoWebShopWishlist.WishlistNegativeScripts@561b6512</td></tr>
+<tr>
+<td title='DemoWebShopPositiveScripts.RegisterScriptTest.registrationTest()'><b>registrationTest</b><br>Test class: DemoWebShopPositiveScripts.RegisterScriptTest<br>Parameters: TC-REG-02, male, Jhon, Smith, Jhon45@gmail.com, Jhon@234, Jhon@234, Success</td>
+<td></td>
+<td>3</td>
+<td>DemoWebShopPositiveScripts.RegisterScriptTest@1ce24091</td></tr>
+<tr>
+<td title='DemoWebShopPositiveScripts.RegisterScriptTest.registrationTest()'><b>registrationTest</b><br>Test class: DemoWebShopPositiveScripts.RegisterScriptTest<br>Parameters: TC-REG-03, female, Priya, Sharma, priya56@gmail.com, priya@456, priya@456, Register Completed</td>
+<td></td>
+<td>3</td>
+<td>DemoWebShopPositiveScripts.RegisterScriptTest@1ce24091</td></tr>
+<tr>
+<td title='DemoWebShopCartScripts.CartPositiveScripts.CART_POS_02_VerifyProductInCart()'><b>CART_POS_02_VerifyProductInCart</b><br>Test class: DemoWebShopCartScripts.CartPositiveScripts</td>
+<td></td>
+<td>10</td>
+<td>DemoWebShopCartScripts.CartPositiveScripts@43c1b556</td></tr>
+<tr>
+<td title='DemoWebShopPositiveScripts.RegisterNegativeScriptTest.REG_17_ConfirmPasswordEmpty()'><b>REG_17_ConfirmPasswordEmpty</b><br>Test class: DemoWebShopPositiveScripts.RegisterNegativeScriptTest</td>
+<td></td>
+<td>0</td>
+<td>DemoWebShopPositiveScripts.RegisterNegativeScriptTest@26b3fd41</td></tr>
+<tr>
+<td title='DemoWebShopPositiveScripts.RegisterScriptTest.registrationTest()'><b>registrationTest</b><br>Test class: DemoWebShopPositiveScripts.RegisterScriptTest<br>Parameters: TC-REG-04, male, Raghu, Gowda, raghu78@gmail.com, raghu@678, raghu@678, valid Credentails 
+and Register Completed</td>
+<td></td>
+<td>3</td>
+<td>DemoWebShopPositiveScripts.RegisterScriptTest@1ce24091</td></tr>
+<tr>
+<td title='DemoWebShopCartScripts.CartPositiveScripts.CART_POS_01_AddProductToCart()'><b>CART_POS_01_AddProductToCart</b><br>Test class: DemoWebShopCartScripts.CartPositiveScripts</td>
+<td></td>
+<td>89</td>
+<td>DemoWebShopCartScripts.CartPositiveScripts@43c1b556</td></tr>
+<tr>
+<td title='DemoWebShopCartScripts.CartNegativeScripts.CART_NEG_01_EmptyQuantity()'><b>CART_NEG_01_EmptyQuantity</b><br>Test class: DemoWebShopCartScripts.CartNegativeScripts</td>
+<td></td>
+<td>9</td>
+<td>DemoWebShopCartScripts.CartNegativeScripts@1e178745</td></tr>
+</table><p>
+</body>
+</html>
