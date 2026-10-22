@@ -1,4 +1,3 @@
-
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -18,11 +17,11 @@
     <dependencies>
 
         <!-- Selenium WebDriver -->
-       <dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-java</artifactId>
-    <version>4.21.0</version>
-    </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.21.0</version>
+        </dependency>
 
         <!-- TestNG -->
         <dependency>
@@ -32,30 +31,19 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Apache POI for Excel (.xls) -->
+        <!-- Apache POI -->
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
             <version>5.4.1</version>
         </dependency>
 
-        <!-- Apache POI for Excel (.xlsx) -->
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
             <version>5.4.1</version>
         </dependency>
 
-        <dependency>
-        	<groupId>AdvancedSelenium1</groupId>
-        	<artifactId>AdvancedSelenium1</artifactId>
-        	<version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-        	<groupId>swaglab.capgemini</groupId>
-        	<artifactId>Swaglab.capgemini</artifactId>
-        	<version>1.0</version>
-        </dependency>
     </dependencies>
 
     <build>
@@ -68,11 +56,12 @@
                 <version>3.13.0</version>
             </plugin>
 
-            <!-- Maven Surefire Plugin for TestNG -->
+            <!-- Maven Surefire Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.5.2</version>
+
                 <configuration>
                     <suiteXmlFiles>
                         <suiteXmlFile>testng.xml</suiteXmlFile>
@@ -82,5 +71,93 @@
 
         </plugins>
     </build>
+
+    <profiles>
+
+        <!-- Functional Testing -->
+        <profile>
+            <id>FT</id>
+
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+
+                        <configuration>
+                            <suiteXmlFiles>
+                                <suiteXmlFile>Functional.xml</suiteXmlFile>
+                            </suiteXmlFiles>
+                        </configuration>
+
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+
+        <!-- Integration Testing -->
+        <profile>
+            <id>IT</id>
+
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+
+                        <configuration>
+                            <suiteXmlFiles>
+                                <suiteXmlFile>Integration.xml</suiteXmlFile>
+                            </suiteXmlFiles>
+                        </configuration>
+
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+
+        <!-- Smoke Testing -->
+        <profile>
+            <id>ST</id>
+
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+
+                        <configuration>
+                            <suiteXmlFiles>
+                                <suiteXmlFile>Smoke.xml</suiteXmlFile>
+                            </suiteXmlFiles>
+                        </configuration>
+
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+
+        <!-- System Testing -->
+        <profile>
+            <id>SST</id>
+
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+
+                        <configuration>
+                            <suiteXmlFiles>
+                                <suiteXmlFile>System.xml</suiteXmlFile>
+                            </suiteXmlFiles>
+                        </configuration>
+
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+
+    </profiles>
 
 </project>
